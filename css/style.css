@@ -1,0 +1,59 @@
+:root {
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --success-75: hsla(166, 63%, 50%, 75%);
+  --success-50: hsla(166, 63%, 50%, 50%);
+  --success-10: hsla(166, 63%, 50%, 10%);
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --modal-overlay: #2e2f4266;
+  --hero-background: #2e2f42b2;
+  --white: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text);
+  background-color: var(--white);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.header-1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.header-2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.header-3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.button-text {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
