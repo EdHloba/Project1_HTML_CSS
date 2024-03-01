@@ -15,15 +15,69 @@
   --white: #ffffff;
 }
 
+/*
+  |============================
+  | reset start
+  |============================
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+/*
+  |============================
+  | reset end
+  |============================
+*/
+
 .list {
   list-style: none;
 }
 
 .link {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  text-decoration: underline;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--pressed-state);
 }
 
 body {
@@ -33,6 +87,33 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.medium-text {
+  font-weight: 500;
+}
+
+.page-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: var(--dark);
+}
+
+#logo-light {
+  color: var(--light);
+}
+
+.page-logo-web {
+  color: var(--primary-brand);
 }
 
 .header-1 {
@@ -53,7 +134,41 @@ body {
   line-height: 24px;
 }
 
+.button {
+  background-color: var(--primary-brand);
+
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px 0px #00000026;
+  border-radius: 4px;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--pressed-state);
+}
+
 .button-text {
   font-weight: 500;
   letter-spacing: 0.04em;
+
+  color: var(--white);
+}
+
+.hero-section {
+  background-color: var(--dark);
+}
+
+.hero-header {
+  color: var(--white);
+}
+
+.team-section {
+  background-color: var(--light);
+}
+
+.footer {
+  background-color: var(--dark);
+  color: var(--light);
 }
